@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class VerificarStr {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        String frase;
+
+        System.out.println("Digite a frase: ");
+        frase = sc.nextLine();
+
+        String[] frase1 = frase.split(" ");
+
+        int e = frase1.length;
+
+        for (int a = e - 1; a >= 0; a--) {
+
+            System.out.print(frase1[a] + " ");
+        }
