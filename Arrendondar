@@ -1,0 +1,14 @@
+import java.math.*;
+import java.util.Scanner;
+
+
+public class Arredondar {
+
+    public static void main(String[] args) {
+
+        float original = (float) 451.3256531;
+
+        System.out.println(String.format("%.4f" , original));
+
+    }
+}
