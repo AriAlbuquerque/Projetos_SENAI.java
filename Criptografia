@@ -1,0 +1,72 @@
+import java.util.Scanner;
+import java.lang.String;
+
+public class PadraoCriptografia {
+
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Digite uma senha de tres digitos: ");
+        String senha1 = sc.nextLine();
+
+        String[] codi = senha1.split("");
+
+        String n0 = "Guns&Roses";
+        String n1 = "Pearl Jam";
+        String n2 = "Nirvana";
+        String n3 = "Oasis";
+        String n4 = "Pink Floyd";
+        String n5 = "Rammstein";
+        String n6 = "TheCure";
+        String n7 = "LedZeppelin";
+        String n8 = "Eagles";
+        String n9 = "FooFighters";
+
+
+        for (int i = 0; i < 3; i++) {
+
+            if (codi[i].contains("0")) {
+                System.out.println(n0);
+            }
+
+            if (codi[i].contains("1")) {
+                System.out.println(n1);
+            }
+            if (codi[i].contains("2")) {
+                System.out.println(n2);
+            }
+
+            if (codi[i].contains("3")) {
+                System.out.println(n3);
+            }
+
+            if (codi[i].contains("4")) {
+                System.out.println(n4);
+            }
+
+            if (codi[i].contains("5")) {
+                System.out.println(n5);
+            }
+
+            if (codi[i].contains("6")) {
+                System.out.println(n6);
+            }
+
+            if (codi[i].contains("7")) {
+                System.out.println(n7);
+            }
+
+            if (codi[i].contains("8")) {
+                System.out.println(n8);
+            }
+
+            if (codi[i].contains("9")) {
+                System.out.println(n9);
+
+
+            }
+
+        }
+    }
+}
