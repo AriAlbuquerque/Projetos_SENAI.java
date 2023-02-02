@@ -1,0 +1,26 @@
+import java.util.Scanner; //Importa Scanner para recebimento de dados.
+public class EntradaSaida { //classe publica para que todod possam acessar.
+    public static void main(String[] args) { //Método MAIN ou metodo principal sem ele o codigo ñ compila.
+
+        Scanner sc = new Scanner(System.in); //Dizendo ao sistema que o scanner receberá informação via "teclado" entrada de dados.
+
+        int ant, suces, n1; //declaração de variável, sempre o TIPO,NOME e VALOR se necessário.
+
+        System.out.printf("Digite um numero inteiro:"); //Imprime no console, saída de dados sempe entre "" e uso de + para cocatenação.
+        n1 = sc.nextInt(); //Indicando ao sistema que o valor digitado será o valor de n1, váriavel declada anteriormente sem valor definido.
+
+        ant = n1-1; //Declaração de sequencia aritmética onde o numero recebido terá um decrescimo de 1 numero.
+        suces = n1+1; //Declaração de seq logica onde n1 terá o acréssimo de um número.
+
+        System.out.println("O valor digitado foi: " + n1 ); //Impressão de sequencia de caracter sempre em "" concatenado + com variavél n1;
+        System.out.println("Seu Antecessor e: " + ant); //Impressão de sequencia de caracter sempre em "" concatenado + com variavél ant.
+        System.out.println("Seu Sucessor e: " + suces ); //Impressão de sequencia de caracter sempre em "" concatenado + com variavél suces.
+
+
+
+
+
+
+
+    }
+}
