@@ -1,0 +1,38 @@
+import java.util.Scanner;
+import java.math.*;
+public class Fibonacci{
+
+
+    public static void main(String [] args) {
+            Scanner sc = new Scanner(System.in);
+
+
+        int num1 = 1, num2 = 1;
+
+        System.out.println("Digite um numero para saber se ele faz parte da sequencia Fibonacci:");
+        int Fibo =  sc.nextInt();
+
+
+        
+
+        for(int i = 1; i <=Fibo; i++){
+            num1 = num1 + num2;
+            num2 = num1 - num2;
+
+            System.out.println(Fibo);
+
+            if (Fibo == num1){
+                System.out.println("O numero e Fibonacci");
+                break;
+            }
+
+            if (Fibo < num1){
+                System.out.println("Ele nao e Fibonaccci.");
+                break;
+            }
+
+        }
+    }
+
+}
+
