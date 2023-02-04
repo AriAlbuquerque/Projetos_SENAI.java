@@ -1,0 +1,74 @@
+public class ImparPar_Interativo {
+
+    public static void main(String[] args) throws InterruptedException {
+
+
+        char[] rounds = new char[3];
+        int roundAtual = 0;
+        System.out.println("Comecando PAR ou IMPAR melhor de 3!");
+
+        while (roundAtual < 3) {
+            Scanner sc = new Scanner(System.in);
+
+            System.out.println("Escolha PAR ou IMPAR. dogite 0 para escolher PAR ou 1 para IMPAR.");
+            int escolha = sc.nextInt();
+
+            if (escolha == 0)
+                System.out.println("O jogador escolheu PAR!");
+            else
+                System.out.println("O jpgador escolheu IMPAR!");
+            System.out.println("Faca sua jogada. Escolha 1 ou 2.");
+
+            int jogada1 = sc.nextInt();
+
+            System.out.println("Agora e a vez da CPU...");
+
+            Thread.sleep(1000);
+            double numero = Math.random();
+
+            double jogada2 = (int) (Math.ceil(numero) + 1);
+
+            System.out.println("A CPU jogou: " + jogada2);
+
+            System.out.println("Calculando vencedor...");
+            Thread.sleep(1000);
+
+            double soma = jogada1 + jogada2;
+            boolean resultadoPar = soma % 2 == 0;
+
+            if (resultadoPar == true && escolha == 1) {
+                System.out.println("O jogador ganhou este ROUND.");
+                rounds[roundAtual++] = 'J';
+            } else if (resultadoPar == false && escolha == 1) {
+                System.out.println("O jogador ganhou este ROUND.");
+                rounds[roundAtual++] = 'J';
+
+
+                } else{
+                    System.out.println("A CPU ganhou este ROUND!");
+                    rounds[roundAtual++] = 'C';
+
+                }
+
+                if (roundAtual == 2) {
+                    if (rounds[0] == 'J' && rounds[1] == 'J') {
+                        System.out.println("O jogador ganhou duas em sequencia!");
+                        break;
+                    }
+                } else if (roundAtual == 3) {
+
+                    if (rounds[2] == 'J') {
+                        System.out.println("O jogador ganhou o melhor de 3!");
+                        break;
+                    } else if (rounds[2] == 'C') {
+                        System.out.println("A CPU ganhou a melhor de 3! ");
+                        break;
+
+                    }
+                }
+
+
+            }
+        }
+    }
+
