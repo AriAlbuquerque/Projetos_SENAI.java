@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+public class PedraPapelTesoura {
+
+    public static void main(String[]args) throws InterruptedException {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Escolha PAPEL(1), PEDRA(2), TESOURA(3):");
+        int jogada1 = sc.nextInt();
+
+        if (jogada1 == 1)
+            System.out.println("O jogador escolheu PAPEL.");
+        else if (jogada1 == 2) {
+            System.out.println("O Jogador escolheu PEDRA.");
+        }else
+            System.out.println("Ojogador escolheu TESOURA.");
+
+            System.out.println("Agora e a vez da CPU.");
+            Thread.sleep((1000));
+            int jogada2 = (int) (Math.random() * 3 ) + 1;
+
+            if (jogada2 == 1)
+                System.out.println("A CPU escolheu PAPEL.");
+            else if (jogada2==2)
+                System.out.println("A CPU escolheu PEDRA.");
+            else System.out.println("A CPU escolheu TESOURA");
+            System.out.println("Processando vencedor...");
+            Thread.sleep(1000);
+
+            if (jogada1 == jogada2){
+                System.out.println("Emaptou!!!");
+            } else if (jogada1 == 1 && jogada2==2) {
+                System.out.println("Papel enrola Pedra, você ganhou!\n Parabens!!!");
+            } else if (jogada1==2 && jogada2 == 3) {
+                System.out.println("Pedra quebra Tesoura, Você ganhou!\nParabens!!!");
+            } else {
+                System.out.println("Se deu mal a CPU venceu!!!\n Mais sorte na próxima.");
+
+            }
+
+        }
+            {
+
+            }
+        }
