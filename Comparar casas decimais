@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class CompararCasasDecimais {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Digite um numero com tres casas decimais:");
+        float n1= sc.nextFloat();
+
+        System.out.println("Digite um numero com tres casas decemais::");
+        float n2 = sc.nextFloat();
+
+        n1 = n1%.3f;
+        n2 = n2%.3f;
+
+        if (n1 == n2) {
+            System.out.println("Os numeros sao iguais!");
+        }
+
+        if (n1 != n2) {
+            System.out.println("Os numeros sao diferentes!");
+        }
+
+    }
+}
