@@ -1,0 +1,45 @@
+import java.util.Scanner;
+import java.math.MathContext;
+
+public class PedraPapelTesoura2 {
+
+    public static void main(String [] args) throws InterruptedException {
+        Scanner sc = new Scanner(System.in);
+
+        while (true){
+            System.out.println("Escolha PAPEL(1), PEDRA(2), TESORA(3):");
+            int jogada1 = sc.nextInt();
+
+            if (jogada1==1)
+                System.out.println("O jogador escolheu PAPEL");
+            else if (jogada1==2)
+                System.out.println("O jogador escolheu PEDRA");
+            else
+                System.out.println("O jogador escolheu TESOURA");
+            System.out.println("Agora e a vex da CPU jogar...");
+            Thread.sleep(1000);
+            int jogada2 = (int)(Math.random() * 3)+1;
+
+            if(jogada2 == 1 )
+                System.out.println("A CPU escolheu PAPEL");
+            else if (jogada2==2)
+                System.out.println("A CPU escolheu PEDRA");
+            else System.out.println("Processando o vencedor...");
+            Thread.sleep(2000);
+
+            if (jogada1==jogada2) {
+                System.out.println("Empatou!!!");
+            } else if ((jogada1==1 && jogada2==2)|| (jogada1 == 2 && jogada2 == 3)||(jogada1==3 && jogada2==1)) {
+                System.out.println("Uhuuu voce ganhou!\nParabens!!!");
+                break;
+            }else{
+                System.out.println("A CPU venceu não foi dessa vez!!!");
+            }
+
+            {
+
+            }
+        }
+
+    }
+}
