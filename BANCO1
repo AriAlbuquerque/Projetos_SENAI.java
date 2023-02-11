@@ -12,7 +12,7 @@ public class Banco {
 
     public int actionc;
 
-    public void dados() {
+    public  dados() {
 
         if (dados == 1) {
             System.out.println("Funcionario");
@@ -20,42 +20,41 @@ public class Banco {
         } else if (dados == 2) {
             System.out.println("Cliente");
         }
-
-
-        public void conta () {
+    }
+        
+        public void conta() {
 
             if (conta == 1) {
                 System.out.println("Conta Corrente.");
             } else if (conta == 2) {
                 System.out.println("Conta poupanca.");
             }
+        }
 
-
-            public void action () {
+            public void action() {
                 if (action == 1) {
                     System.out.println("Conta Corrente.");
                 } else if (action == 2) {
                     System.out.println("Conta poupanca.");
                 }
+            }
 
-                public void actionc () {
+                public void actionc() {
                     if (actionc == 1) {
                         System.out.println("Saque");
                     } else if (actionc == 2) {
-                        System.out.println("Saldo:" + saldo);
-
+                        System.out.println("Saldo:");
                     } else if (actionc == 3) {
                         System.out.println("Extrato");
-
                     } else if (actionc == 4) {
                         System.out.println("Pix");
                     } else if (actionc == 5) {
                         System.out.println("Cartoes");
-
                     } else if (actionc == 6) {
                         System.out.println("Emprestimos");
 
                     }
+                }
 
                     public void nome () {
                         if (nome == Integer.parseInt(toString())) {
@@ -63,11 +62,13 @@ public class Banco {
                         }
                     }
                 }
-            }
-        }
-    }
+            
 
-}
+
+
+
+
+
 
 
 
