@@ -1,0 +1,83 @@
+import java.util.Scanner;
+
+public class Banco {
+    Scanner sc = new Scanner(System.in);
+
+    public String nome;
+    public int dados;
+
+    public int conta;
+
+    public int action;
+
+    public int actionc;
+
+    public void dados() {
+
+        if (dados == 1) {
+            System.out.println("Funcionario");
+
+        } else if (dados == 2) {
+            System.out.println("Cliente");
+        }
+
+
+        public void conta () {
+
+            if (conta == 1) {
+                System.out.println("Conta Corrente.");
+            } else if (conta == 2) {
+                System.out.println("Conta poupanca.");
+            }
+
+
+            public void action () {
+                if (action == 1) {
+                    System.out.println("Conta Corrente.");
+                } else if (action == 2) {
+                    System.out.println("Conta poupanca.");
+                }
+
+                public void actionc () {
+                    if (actionc == 1) {
+                        System.out.println("Saque");
+                    } else if (actionc == 2) {
+                        System.out.println("Saldo:" + saldo);
+
+                    } else if (actionc == 3) {
+                        System.out.println("Extrato");
+
+                    } else if (actionc == 4) {
+                        System.out.println("Pix");
+                    } else if (actionc == 5) {
+                        System.out.println("Cartoes");
+
+                    } else if (actionc == 6) {
+                        System.out.println("Emprestimos");
+
+                    }
+
+                    public void nome () {
+                        if (nome == Integer.parseInt(toString())) {
+                            System.out.println(nome + "Bem vindo!");
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
