@@ -1,0 +1,31 @@
+import java.awt.*;
+import javax.swing.*;
+import javax.swing.border.Border;
+
+import static java.awt.Color.BLUE;
+
+public class Jframe{
+    private static void createAndShowGUI() {
+        JFrame jFrame = new JFrame("Página criada com JAVA");
+        jFrame.setLayout(new FlowLayout());
+        jFrame.setSize(500, 360);
+        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        JLabel label = new JLabel("JAVA é foda!");
+        Border border = BorderFactory.createLineBorder(Color.PINK);
+        label.setBorder(border);
+        label.setPreferredSize(new Dimension(150, 100));
+
+        label.setText("JAVA é vida");
+        label.setHorizontalAlignment(JLabel.CENTER);
+        label.setVerticalAlignment(JLabel.CENTER);
+
+
+        jFrame.add(label);
+        jFrame.setVisible(true);
+    }
+
+    public static void main(String[] args) {
+        createAndShowGUI();
+    }
+}
