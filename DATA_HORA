@@ -1,0 +1,24 @@
+import java.time.*;
+import java.time.temporal.TemporalAdjuster;
+import java.util.TimeZone;
+
+public class DataHora {
+
+    public static void main(String[] args) {
+
+        LocalDate localDate = LocalDate.now();
+        LocalDate localDate1 = LocalDate.of(1989,Month.DECEMBER,6);
+        LocalTime localTime = LocalTime.now();
+
+
+        System.out.println("****** DATA & HORA *****");
+
+        System.out.println("Hora atual: " + localTime + "\nData de hoje: " + localDate);
+
+        System.out.println("***** Comparacao de datas *****");
+
+        if(localDate==localDate1){
+            System.out.println("As datas são iguais." + localDate + localDate1);
+        }else {
+            System.out.println("As datas sao diferentes\n" + localDate + "\n" + localDate1);
+        }
